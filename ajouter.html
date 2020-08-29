@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter une nouvelle annonce</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand text-white" href="acceuil.html">LOST AND FOND TUNISIA</a>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-link text-white text-center" href="resgister.html">Resgiter <span
+                    class="sr-only">(current)</span></a>
+            <a class="nav-link text-white text-center" href="login.html">Login</a>
+        </div>
+    </div>
+    
+</nav>
+
+  <div class="container-fluid">
+    <div class="card mt-5">
+      <!-- card header -->
+        <div class="card-header">
+
+            <!-- message de bienvenue -->
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class="font-weight-bold text-center text-primary h2">
+                        Binvenue ! vous pouvez ajouter une nouvelle annonce ici
+                    </p>
+                </div>
+            </div>
+            <!--Fin message de bienvenue -->
+        </div>
+
+        <!-- card body -->
+        <div class="card-body">
+
+          <!-- télécharger image -->
+          <div class="input-group">
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" id="images">
+              <label class="custom-file-label" for="inputGroupFile04" id="image">Veuillez choisir l'image que vous souhaitez ajouter à votre annonce</label>
+            </div>
+            <div class="input-group-append">
+              <button onclick="ajouterimg()" class="btn btn-outline-secondary" type="button">Ajouter image</button>
+            </div>
+          </div>
+          <!-- fin image -->
+<br>
+          <!-- titre -->
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" id="titre" placeholder="Veuillez choisir un titre pour votre annonce"  aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button onclick="ajoutertitre()" class="btn btn-outline-secondary" type="button">Ajouter titre</button>
+            </div>
+          </div>
+          <!-- fin titre-->
+
+          <!-- description -->
+          <div class="form-group">
+            <label for="bio">Veuillez descriver votre annonce:</label>
+            <textarea class="form-control" rows="3" id="descript"></textarea>
+            <div class="input-group-append">
+              <button onclick="ajouterdes()" class="btn btn-outline-secondary" type="Ajouter description">ajouter description</button>
+            </div>
+          </div>
+          <!-- fin description  -->
+
+          <!-- validation que tout est rempli  -->
+          <div>
+            <button onclick="validation()" type="button" class="btn btn-outline-success">validation </button>
+
+          </div>
+        </div>
+        <script src="login.js" type="text/javascript"></script>
+        <script src="resgister.js" type="text/javascript"></script>
+        <script src="ajouter.js" type="text/javascript"></script>
+        <script src="mycards.js" type="text/javascript"></script>
+</body>
+
+
+</html>
