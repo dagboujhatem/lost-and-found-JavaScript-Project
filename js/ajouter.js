@@ -18,7 +18,7 @@ function ajouter(){
         alert('veuillez entrez titre qui contient plusque 5 lettres');
         return false;
     }
-    if (titre ==0) {
+    if (titre.length ==0) {
         alert('veuillez télécharger titre');
     }
 
@@ -32,7 +32,7 @@ function ajouter(){
         alert('veuillez entrez un nom qui contient plusque 10 lettres');
         return false;
     }
-    if (descript ==0) {
+    if (descript.length ==0) {
         alert('veuillez télécharger titre');
     }
 
