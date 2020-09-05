@@ -46,21 +46,17 @@
           <!-- télécharger image -->
           <div class="input-group">
             <div class="custom-file">
-              <input type="file" class="custom-file-input" id="images">
+              <input type="file" class="custom-file-input" id="images" accept="image/*">
               <label class="custom-file-label" for="inputGroupFile04" id="image">Veuillez choisir l'image que vous souhaitez ajouter à votre annonce</label>
             </div>
-            <div class="input-group-append">
-              <button onclick="ajouterimg()" class="btn btn-outline-secondary" type="button">Ajouter image</button>
-            </div>
+            
           </div>
           <!-- fin image -->
 <br>
           <!-- titre -->
           <div class="input-group mb-3">
             <input type="text" class="form-control" id="titre" placeholder="Veuillez choisir un titre pour votre annonce"  aria-describedby="basic-addon2">
-            <div class="input-group-append">
-              <button onclick="ajoutertitre()" class="btn btn-outline-secondary" type="button">Ajouter titre</button>
-            </div>
+            
           </div>
           <!-- fin titre-->
 
@@ -68,22 +64,19 @@
           <div class="form-group">
             <label for="bio">Veuillez descriver votre annonce:</label>
             <textarea class="form-control" rows="3" id="descript"></textarea>
-            <div class="input-group-append">
-              <button onclick="ajouterdes()" class="btn btn-outline-secondary" type="Ajouter description">ajouter description</button>
-            </div>
+            
           </div>
           <!-- fin description  -->
 
           <!-- validation que tout est rempli  -->
           <div>
-            <button onclick="validation()" type="button" class="btn btn-outline-success">validation </button>
+            <button onclick="ajouter()" type="button" class="btn btn-outline-success">Ajouter une nouvelle annonce </button>
 
           </div>
         </div>
-        <script src="login.js" type="text/javascript"></script>
-        <script src="resgister.js" type="text/javascript"></script>
-        <script src="ajouter.js" type="text/javascript"></script>
-        <script src="mycards.js" type="text/javascript"></script>
+
+        <script src="js/ajouter.js" type="text/javascript"></script>
+        <script src="js/mycards.js" type="text/javascript"></script>
 </body>
 
 
