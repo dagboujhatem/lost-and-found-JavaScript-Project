@@ -20,6 +20,8 @@ function login() {
         return false;
     }
     else{
+
+        localStorage.setItem('authentificated_user',JSON.stringify(found));
         return true;
 
     }
